@@ -44,5 +44,8 @@ jobs:
     - name: Install Composer dependencies
       run: composer install
 
+    - name: Generate APP_KEY
+      run: php artisan key:generate
+
     - name: Run Tests
       run: php artisan test
